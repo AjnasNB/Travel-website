@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Travel Booking Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#destination-listings">Destinations</a></li>
+                <li><a href="#package-details">Package details</a></li>
+                <li><a href="#booking-process">Bookings</a></li>
+                <li><a href="#user-account">Account</a></li>
+                <li><a href="#reviews-ratings">Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage -->
+    <section id="homepage">
+        <div class="search-form">
+            <h2>Find Your Dream Destination</h2>
+            <form>
+                <input type="text" placeholder="Enter a destination">
+                <input type="date" placeholder="Select travel dates">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="popular-destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-card">
+                <img src="destination1.jpg" alt="Destination 1">
+                <h3>Destination 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>Starting from $1000</span>
+            </div>
+            <div class="destination-card">
+                <img src="destination2.jpg" alt="Destination 2">
+                <h3>Destination 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>Starting from $800</span>
+            </div>
+            <!-- Add more destination cards as needed -->
+        </div>
+    </section>
+
+    <!-- Destination Listings -->
+    <section id="destination-listings">
+        <h2>Explore Destinations</h2>
+        <div class="filter-form">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="all">All</option>
+                <option value="destination1">Destination 1</option>
+                <option value="destination2">Destination 2</option>
+            </select>
+
+            <label for="price-range">Price Range:</label>
+            <select id="price-range">
+                <option value="all">All</option>
+                <option value="0-500">$0 - $500</option>
+                <option value="501-1000">$501 - $1000</option>
+                <option value="1001-2000">$1001 - $2000</option>
+            </select>
+
+            <label for="activity-type">Activity Type:</label>
+            <select id="activity-type">
+                <option value="all">All</option>
+                <option value="adventure">Adventure</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="sightseeing">Sightseeing</option>
+                <option value="cultural">Cultural</option>
+                </select>
+                <button type="submit">Filter</button>
+            </div>
+        
+            <div class="destination-cards">
+                <div class="destination-card">
+                    <img src="destination1.jpg" alt="Destination 1">
+                    <h3>Destination 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span>Starting from $1000</span>
+                </div>
+                <div class="destination-card">
+                    <img src="destination2.jpg" alt="Destination 2">
+                    <h3>Destination 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span>Starting from $800</span>
+                </div>
+                <!-- Add more destination cards as needed -->
+            </div>
+        </section>
+        
+        <!-- Package Details -->
+        <section id="package-details">
+            <div class="package-details">
+                <h2>Package Details</h2>
+                <img src="destination1.jpg" alt="Destination 1">
+                <h3>Destination 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul>
+                    <li>Itinerary: Lorem ipsum dolor sit amet</li>
+                    <li>Accommodation: 5-star hotel</li>
+                    <li>Transportation: Flight included</li>
+                    <li>Activities: Lorem ipsum dolor sit amet</li>
+                </ul>
+                <span>Starting from $1000</span>
+                <button type="button">Book Now</button>
+            </div>
+        </section>
+        
+        <!-- Booking Process -->
+        <section id="booking-process">
+            <div class="booking-form">
+                <h2>Booking Process</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+        
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+        
+                    <label for="requirements">Requirements:</label>
+                    <textarea id="requirements" placeholder="Enter any specific requirements"></textarea>
+        
+                    <button type="submit">Make Payment</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- User Account -->
+        <section id="user-account">
+            <div class="dashboard">
+                <h2>User Dashboard</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Destination</th>
+                            <th>Travel Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>Destination 1</td>
+                            <td>2023-06-15</td>
+                            <td>Confirmed</td>
+                            </tr>
+                            <!-- Add more booking rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Reviews and Ratings -->
+            <section id="reviews-ratings">
+                <div class="review-form">
+                    <h2>Leave a Review</h2>
+                    <form>
+                        <label for="rating">Rating:</label>
+                        <select id="rating">
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+            
+                        <label for="review">Review:</label>
+                        <textarea id="review" placeholder="Enter your review"></textarea>
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            
+                <div class="reviews">
+                    <h2>Reviews and Ratings</h2>
+                    <div class="review">
+                        <div class="rating">4 Stars</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis sed sem sagittis fringilla.</p>
+                        <span>by John Doe</span>
+                    </div>
+                    <!-- Add more reviews as needed -->
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2023 Travel Booking Website. All rights reserved.</p>
+            </footer>
+            </body>
+            </html>
+            
+        
+
